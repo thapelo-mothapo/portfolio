@@ -16,14 +16,14 @@
   color: white;
 }
 
-.leftnav a{
+/* .leftnav a{
   font-size: 20px;
 
 }
 
 .rightnav {
   float: right;
-}
+} */
 
 .main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px;   /* border: 1px black solid; */
@@ -31,20 +31,42 @@
   max-width: 960px;
   margin: 100px auto;
   padding: 50px;
-  
   border-radius: 0 0 10px 10px;
+  
+}
+
+.intro{
+  /* border: 1px green solid; */
+  background-color:aliceblue ;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 16px 0;
+
+}
+.icontent{
+  max-width: 530px;
+}
+
+.icontent p{
+    line-height: 2;
+    margin-bottom: 0.5%;
 }
 
 .main h1{
   font-size: 5rem;
   margin-bottom: 0;
-  color: hsl(26,86%,54%);
+  color:orange;
 }
+
 
 .main h2{
   font-size: 2.5rem;
   margin-bottom: 0;
 }
+
+
 
 .main p{
   line-height: 1.4;
@@ -52,21 +74,50 @@
   color: rgb(51, 50, 50);
 }
 
-.introclear{
-clear: both;
+.mybackground{
+  clear: both;
+
 }
 
-.intro img{
-  float: left;
-  border-radius: 0 20px 20px 0;
-  margin-right: 20px;
-  margin-bottom: 16px;
-  max-width: 300px;
+.section{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 75px 0;
+  justify-content: space-evenly;
+  margin: 30px 0;
 }
+
+.section p{
+  max-width: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section img{
+  max-width: 300px;
+  padding: 16px;
+}
+
+
+
+
+.profile{
+  border-radius: 0 20px 20px 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 
 .aboutcontent{
-  clear: left;
+  background-color: aliceblue;
+  padding: 16px;
+  border-radius: 10px;
 }
+ .aboutcontent h2{
+  color: #277cec;
+  text-align: center;
+  font-size: 2rem;
+ }
 .footer {
   padding: 2rem 0;
   /* border-top: 1px solid #eaeaea; */
@@ -77,9 +128,22 @@ clear: both;
 }
 .divider{
   border-style: none;
-  border-bottom: 8px dotted rgb(173, 173, 212)  ;
+  border-bottom: 8px dotted rgb(221, 221, 231)  ;
   width: 7%;
   margin: 50px auto;
 
+}
+@media only screen and (max-width: 932px) {
+  
+  .profile{
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .main h1{
+    color: #277cec;
+  }
 }
 
